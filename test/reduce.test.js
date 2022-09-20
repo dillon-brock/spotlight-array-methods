@@ -20,6 +20,6 @@ test.skip('getSneaks returns the list of sneaker brands', () => {
   ]);
 });
 
-test.skip('getAverageAge returns the average age of the dogs', () => {
+test('getAverageAge returns the average age of the dogs', () => {
   expect(getAverageAge(dogs)).toEqual(3.2);
 });
