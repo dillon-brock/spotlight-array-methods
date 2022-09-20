@@ -3,12 +3,10 @@
 // REQS: use .reduce
 
 export const getSneaks = (brands) => {
-  const sneakers = [];
-  brands.forEach(b => b.shoes.reduce((a, s) => {
-    a.push(s);
+  return brands.reduce((a, s) => {
+    a.push(...s.shoes);
     return a;
-  }, sneakers));
-  return sneakers;
+  }, []);
 };
 
 // INPUT: the array of dogs from data.js
