@@ -3,8 +3,8 @@
 // REQS: use .reduce
 
 export const getSneaks = (brands) => {
-  return brands.reduce((a, s) => {
-    a.push(...s.shoes);
+  return brands.reduce((a, b) => {
+    a.push(...b.shoes);
     return a;
   }, []);
 };
